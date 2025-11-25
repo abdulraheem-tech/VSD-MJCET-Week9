@@ -1398,7 +1398,7 @@ This command runs the synthesis process using the specified design configuration
 ~/OpenROAD-flow-scripts/flow$ gvim reports/sky130hd/vsdbabysoc/base/synth_stat.txt
 ```
 
-<img width="889" height="910" alt="image" src="48.png" />
+<img width="889" height="910" alt="image" src="synth.jpg" />
 
 
 <details> <summary><strong>synth_stat.txt</strong></summary>
@@ -1522,7 +1522,7 @@ This command runs the synthesis process using the specified design configuration
 make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk floorplan
 ```
 <img width="735" height="527" alt="image" src="49.png" />
-
+<img width="735" height="527" alt="image" src="floorplan.jpg" />
 
 This command initiates the floorplanning process for the `vsdbabysoc` design using the specified configuration file `config.mk` on the `sky130hd` platform.
 
@@ -1564,7 +1564,7 @@ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_floorplan
 ```shell
 make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk place
 ```
-<img width="735" height="527" alt="image" src="46.png" />
+<img width="735" height="527" alt="image" src="48.png" />
 This command executes the placement process for the `vsdbabysoc` design, utilizing the configuration file `config.mk` on the `sky130hd` platform to arrange the circuit components optimally within the defined floorplan.
 
 
