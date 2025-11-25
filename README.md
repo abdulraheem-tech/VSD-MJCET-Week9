@@ -1378,10 +1378,10 @@ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk synth
 
 This command runs the synthesis process using the specified design configuration file `config.mk` for the `vsdbabysoc` design on the `sky130hd` platform.
 
-<img width="729" height="522" alt="image" src="45.png" />
+<img width="729" height="522" alt="image" src="clean.jpg" />
 
 
-<img width="736" height="526" alt="image" src="46.png" />
+<img width="736" height="526" alt="image" src="synth.jpg" />
 
 
 #### Synthesis netlist
@@ -1389,7 +1389,7 @@ This command runs the synthesis process using the specified design configuration
 ```shell
 ~/OpenROAD-flow-scripts/flow$ gvim results/sky130hd/vsdbabysoc/base/1_1_yosys.v
 ```
-<img width="888" height="889" alt="image" src="47.png" />
+<img width="888" height="889" alt="image" src="yosys.v.jpg" />
 
 
 #### Synthesis Stats
@@ -1399,7 +1399,7 @@ This command runs the synthesis process using the specified design configuration
 ```
 
 <img width="889" height="910" alt="image" src="synth.jpg" />
-
+<img width="889" height="910" alt="image" src="synthtxt.png" />
 
 <details> <summary><strong>synth_stat.txt</strong></summary>
 
@@ -1555,7 +1555,7 @@ After saving the changes, re-run the floorplan step and the flow should proceed 
 ```shell
 make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_floorplan
 ```
-<img width="735" height="527" alt="image" src="45.png" />
+<img width="735" height="527" alt="image" src="guiFloorplan.jpg" />
 
 ------
 
@@ -1575,6 +1575,7 @@ This command executes the placement process for the `vsdbabysoc` design, utilizi
 make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_place
 ```
 <img width="735" height="527" alt="image" src="47.png" />
+<img width="735" height="527" alt="image" src="gui_place.jpg" />
 
 To view the Placement Density heatmap in OpenROAD:
 
