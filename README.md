@@ -28,7 +28,7 @@ Through this exercise, the BabySoC design undergoes floorplan definition, standa
 
 The outcome of this work is a fully placed and routed BabySoC layout, accompanied by a generated SPEF file that enables post-route Static Timing Analysis (STA). This provides insight into how parasitic effects influence signal delay and how accurate timing verification is performed in professional VLSI design environments.
 
-<img width="731" height="267" alt="image" src="Arch.jpg" />
+<img width="731" height="467" alt="image" src="Arch.jpg" />
 
 ### Setup and Prepare Project Directory
 Clone or set up the directory structure as follows:
@@ -57,13 +57,13 @@ cd ~/VLSI
 git clone https://github.com/manili/VSDBabySoC.git
 cd ~/VLSI/VSDBabySoC/
 ```
-<img width="731" height="267" alt="image" src="one.png" />
+<img width="731" height="367" alt="image" src="one.png" />
 
 ### TLV to Verilog Conversion for RVMYTH
 
 Initially, you will see only the `rvmyth.tlv` file inside `src/module/`, since the RVMYTH core is written in TL-Verilog.
 
-<img width="734" height="217" alt="image" src="2.png" />
+<img width="734" height="417" alt="image" src="2.png" />
 
 To convert it into a `.v` file for simulation, follow the steps below:
 
@@ -104,7 +104,7 @@ sandpiper-saas -i ./src/module/*.tlv -o rvmyth.v --bestsv --noline -p verilog --
 
 You can confirm this by listing the files:
 
-<img width="739" height="284" alt="image" src="7.png" />
+<img width="739" height="484" alt="image" src="7.png" />
 
 #### Note 
 To use this environment in future sessions, always activate it first:
@@ -126,7 +126,7 @@ cd ~/VLSI/VSDBabySoC/
 mkdir -p output/pre_synth_sim
 iverilog -o ~/Desktop/VLSI/VSDBabySoC/output/pre_synth_sim/pre_synth_sim.out -DPRE_SYNTH_SIM -I ~/Desktop/VLSI/VSDBabySoC/src/include -I ~/Desktop/VLSI/VSDBabySoC/src/module ~/Desktop/VLSI/VSDBabySoC/src/module/testbench.v
 ```
-<img width="1213" height="83" alt="image" src="8.png" />
+<img width="1213" height="583" alt="image" src="8.png" />
 
 Then run:
 ```bash
@@ -1364,8 +1364,8 @@ source env.sh
 cd flow
 ```
 
-<img width="739" height="580" alt="image" src="44.png" />
-
+<img width="739" height="580" alt="image" src="42.png" />
+<img width="739" height="580" alt="image" src="43a.png" />
 ----
  
 ### `Run Synthesis`
@@ -1378,7 +1378,7 @@ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk synth
 
 This command runs the synthesis process using the specified design configuration file `config.mk` for the `vsdbabysoc` design on the `sky130hd` platform.
 
-<img width="729" height="522" alt="image" src="clean.jpg" />
+<img width="729" height="522" alt="image" src="clean.png.jpg" />
 
 
 <img width="736" height="526" alt="image" src="synth.jpg" />
